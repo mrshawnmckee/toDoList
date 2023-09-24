@@ -1,7 +1,28 @@
 .container {
     display: flex;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    border: 1px solid black;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.head {
+.head, .submitItem, .btn{
     display: flex;
+    justify-content: center;
+    /* padding: 50px; */
+}
+
+.logo {
+    margin: 20px;
+    color: #008b8b;
+}
+
+.title {
+    color: #008b8b;
+}
+.addSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
