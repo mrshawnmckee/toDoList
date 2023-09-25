@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+:root {
+    --postIt: #fcffa4;
+    --inkPen: #0000CD;
+}
+
 .container {
     /* display: flex; */
     max-width: 500px;
@@ -6,7 +13,7 @@
     flex-direction: column;
     margin: 30px auto; /* auto moved the whole container to center of page*/
     padding: 20px;
-    background-color: #fcffa4 ;
+    background-color: var(--postIt);
 }
 
 .head {
@@ -18,13 +25,16 @@
 .title {
     font-weight: 500;
     margin: 20px;
-    color: #008b8b;
+    color: var(--inkPen);
 }
 .logo {
-    color: #008b8b;
+    color: var(--inkPen);
 }
 
 #item-input {
+    font-family: 'Gochi Hand', sans-serif;
+    background-color: var(--postIt);
+    color: var(--inkPen);
     width: 98%;
     border: 1px solid gray;
     border-radius: 5px;
@@ -33,7 +43,14 @@
     padding: 5px; 
 }
 
+.addItem {
+    background-color: ;
+}
+
 #filter {
+    font-family: 'Gochi Hand', sans-serif;
+    background-color: var(--postIt);
+    color: var(--inkPen);
     margin-top: 20px;
     margin-bottom: 20px;
     border: none;
@@ -42,14 +59,14 @@
     font-size: 20px;
 }
 
-
 #item-list {
     list-style-type: none;
 }
 
-
-
 .items {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 18px;
+    color: var(--inkPen);
     display: flex;
     justify-content: space-between;
     border: 1px solid gray;
@@ -64,11 +81,8 @@
 
 .btn-link {
     border: none;
-    background-color: #fff;
+    background-color: var(--postIt);
 }
-
-
-
 
 .clear:hover, .btn-link:hover, .addItem:hover{
     background-color: gray;
