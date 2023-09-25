@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>To Do List</title>
 </head>
 <body>
@@ -15,20 +21,30 @@
         </div>
         <div class="addSection">
             <div class="submitItem">
-                <form action="">
-                    <input type="text" placeholder="Add ToDo item">
+                <form action="" id="item-form">
+                    <input type="text" placeholder="Add ToDo item" id="item-input">
+                    <div class="btn">
+                        <button class="addItem">+ Add Item</button>
+        
+                    </div>
                 </form>
-            </div>
-            <div class="btn">
-                <button class="addItem">+ Add Item</button>
-
+                <div class="filter">
+                    <input type="text" class="form-input-filter" id="filter" placeholder="filter">
+                </div>
             </div>
         </div>
-        <div class="listArea">
-            <ul class="listItems">
-
+        <div class="item-area">
+            <ul id="item-list">
+                <li class="items">
+                    exampleitem
+                    <button class="remove-item text-red btn-link"><i class="fa-solid fa-xmark"></i></button>
+                </li>
             </ul>
+            <div class="btn">
+                <button class="clear">Clear all items</button>
+            </div>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>

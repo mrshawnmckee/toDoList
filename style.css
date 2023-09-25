@@ -1,28 +1,84 @@
 .container {
-    display: flex;
-    /* width: 100vw; */
-    /* height: 100vh; */
+    /* display: flex; */
+    max-width: 500px;
     border: 1px solid black;
     justify-content: center;
     flex-direction: column;
+    margin: 30px auto; /* auto moved the whole container to center of page*/
+    padding: 20px;
+    background-color: #fcffa4 ;
 }
 
-.head, .submitItem, .btn{
+.head {
     display: flex;
-    justify-content: center;
-    /* padding: 50px; */
-}
-
-.logo {
-    margin: 20px;
-    color: #008b8b;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .title {
+    font-weight: 500;
+    margin: 20px;
     color: #008b8b;
 }
-.addSection {
+.logo {
+    color: #008b8b;
+}
+
+#item-input {
+    width: 98%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;;
+    padding: 5px; 
+}
+
+#filter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 98%;
+    font-size: 20px;
+}
+
+
+#item-list {
+    list-style-type: none;
+}
+
+
+
+.items {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 45%;
+    padding: 5px 20px;
+}
+
+.text-red {
+    color: red;
+}
+
+.btn-link {
+    border: none;
+    background-color: #fff;
+}
+
+
+
+
+.clear:hover, .btn-link:hover, .addItem:hover{
+    background-color: gray;
+}
+
+
+
+
+@media (max-width: 500px) {
+    items.li {
+        width: 100%;
+    }
 }
